@@ -1,0 +1,16 @@
+@function vw($target) {
+	$vw-context: (1440 * 0.01) * 1px;
+	@return calc($target / $vw-context) * 1vw;
+}
+@function vw-lg($target) {
+	$vw-context: (1900 * 0.01) * 1px;
+	@return calc($target / $vw-context) * 1vw;
+}
+@function vw-m($target) {
+	$vw-context: (375 * 0.01) * 1px;
+	@return calc($target / $vw-context) * 1vw;
+}
+
+@function minus($targetA, $targetB) {
+	@return calc($targetA - $targetB);
+}
